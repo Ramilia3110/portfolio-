@@ -1,0 +1,52 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  body {
+    @apply bg-black text-[#e7e6e6] m-0 p-0;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+  li {
+    cursor: pointer;
+  }
+  button {
+    @apply shadow-xl rounded-xl uppercase bg-gradient-to-r from-[#ff1722] to-[#fd2da2] text-white;
+  }
+}
+
+@layer utilities {
+  .welcome {
+    @apply relative text-slate-50 text-[9vw]  md:text-[7vw]  uppercase font-[800];
+  }
+
+  .welcome::before {
+    content: "welcome ";
+    animation: animate 9s ease-in-out infinite;
+    @apply absolute text-green-500 border-r-2 border-green-400 top-0 left-0 w-0 h-[100%] overflow-hidden;
+  }
+}
+
+body {
+  box-sizing: border-box;
+}
+
+@keyframes animate {
+  0%,
+  10%,
+  100% {
+    width: 0%;
+  }
+  70%,
+  80%,
+  90% {
+    width: 100%;
+  }
+}
