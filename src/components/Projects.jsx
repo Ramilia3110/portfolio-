@@ -29,12 +29,14 @@ const Projects = () => {
               />
               <div className="p-4">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-gray-600">{project.description}</p>
+                <p className="text-gray-600 md:h-[23vh]">
+                  {project.description}
+                </p>
                 <a
                   href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-500 hover:underline mt-2 block"
+                  className="text-green-700 hover:underline mt-2 block"
                 >
                   View Website
                 </a>
