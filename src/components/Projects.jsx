@@ -1,11 +1,11 @@
 import React from "react";
 import { projects } from "../data/projects";
 
-import p1 from "./../assets/p1.png";
-import p2 from "./../assets/p2.png";
 import p3 from "./../assets/p3.png";
-import p4 from "./../assets/d1.png";
-const images = [p1, p2, p3, p4];
+import p2 from "./../assets/p2.png";
+import d1 from "./../assets/d1.png";
+import p4 from "./../assets/p4.png";
+const images = [d1, p2, p3, p4];
 const Projects = () => {
   return (
     <div
